@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5e3a9" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#9a7b1c" />
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181a24" />
+      <stop offset="100%" stop-color="#07080a" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#darkGrad)"/>
+  <!-- Gold Border -->
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="url(#goldGrad)" stroke-width="8" opacity="0.85"/>
+  <!-- Inner Diamond -->
+  <rect x="216" y="70" width="80" height="80" rx="16" transform="rotate(45 256 110)" fill="url(#goldGrad)" opacity="0.9"/>
+  <!-- Typography FS -->
+  <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle" font-family="'Cinzel', 'Playfair Display', serif" font-weight="900" font-size="190" fill="url(#goldGrad)" letter-spacing="4">FS</text>
+  <!-- Subtitle FULLSTOCK -->
+  <text x="50%" y="78%" text-anchor="middle" dominant-baseline="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="34" fill="#f5e3a9" letter-spacing="12" opacity="0.95">FULLSTOCK</text>
+</svg>

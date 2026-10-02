@@ -1,0 +1,68 @@
+{
+  "entities": {
+    "carts": {
+      "title": "Carts",
+      "description": "User shopping carts synced across devices",
+      "type": "document",
+      "fields": {
+        "userId": { "type": "string", "required": true },
+        "items": { "type": "array", "required": true },
+        "updatedAt": { "type": "string", "required": true }
+      }
+    },
+    "customer_reviews": {
+      "title": "Customer Reviews",
+      "description": "Customer reviews with real photos",
+      "type": "document",
+      "fields": {
+        "productId": { "type": "string", "required": false },
+        "productName": { "type": "string", "required": true },
+        "customerName": { "type": "string", "required": true },
+        "rating": { "type": "number", "required": true },
+        "comment": { "type": "string", "required": true },
+        "photoUrl": { "type": "string", "required": false },
+        "verifiedPurchase": { "type": "boolean", "required": true },
+        "createdAt": { "type": "string", "required": true }
+      }
+    },
+    "analytics_events": {
+      "title": "Lightweight Analytics Events",
+      "description": "Minimal non-blocking server/client analytics event logs",
+      "type": "document",
+      "fields": {
+        "eventName": { "type": "string", "required": true },
+        "payload": { "type": "object", "required": false },
+        "timestamp": { "type": "string", "required": true }
+      }
+    },
+    "owner_config": {
+      "title": "Owner Configuration",
+      "description": "Store settings, supplier URL, visibility toggles, and sync schedule",
+      "type": "document",
+      "fields": {
+        "supplierUrl": { "type": "string", "required": false },
+        "lastSyncTime": { "type": "string", "required": false },
+        "syncIntervalMinutes": { "type": "number", "required": false },
+        "hiddenProductIds": { "type": "array", "required": false },
+        "hiddenCategories": { "type": "array", "required": false },
+        "autoHideOutOfStock": { "type": "boolean", "required": false }
+      }
+    },
+    "supplier_products": {
+      "title": "Supplier Imported Products",
+      "description": "Products scraped or synced from the owner's supplier URL",
+      "type": "document",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "name": { "type": "string", "required": true },
+        "price": { "type": "number", "required": true },
+        "category": { "type": "string", "required": true },
+        "image": { "type": "string", "required": true },
+        "images": { "type": "array", "required": false },
+        "description": { "type": "string", "required": true },
+        "inStock": { "type": "boolean", "required": true },
+        "stockCount": { "type": "number", "required": false }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "FullStock - Premium",
+  "description": "Tienda boutique exclusiva de artículos de bazar, regalería y decoración para el hogar con acabados premium en dorado y negro, catálogo interactivo, carrito y pasarela de pago segura.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
